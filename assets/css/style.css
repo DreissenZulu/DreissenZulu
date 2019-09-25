@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-image: url("../images/sun-pattern.png");
     background-repeat: repeat;
@@ -6,8 +11,6 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    margin: 0;
-    padding: 0;
 }
 
 /* You can apply four values for padding and margin. The values affect
@@ -48,7 +51,7 @@ header {
 h1 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     color: #ffffff;
-    background-color: #4aaaa5;
+    background-color: #1ab3ff;
     width: max-content;
     padding: 0 25px 0 25px;
     line-height: 90px;
@@ -59,7 +62,8 @@ h1 {
 h2 {
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     font-size: 24pt;
-    color: #4aaaa5;
+    padding: 20px 0 15px 0;
+    color: #1ab3ff;
 }
 
 hr {
@@ -76,9 +80,38 @@ hr {
     padding: 0 30px 30px 30px;
 }
 
-img {
+#profileImg {
     float: left;
     padding-right: 20px;
+}
+
+.portfolioRow {
+    display: flex;
+    justify-content: space-around;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    height: 50px;
+    width: 200px;
+    background-color: #1ab3ff;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+}
+
+.image {
+    display: block;
+    width: auto;
+    height: auto;
+}
+
+.container {
+    position: relative;
+    width: 200px;
+    float: left;
+    margin-bottom: 20px;
 }
 
 .fillSpace {
@@ -86,7 +119,7 @@ img {
 }
 
 .footer {
-    border-top: 8px solid #4aaaa5;
+    border-top: 8px solid #1ab3ff;
     background-color: #666666;
     text-align: center;
     padding-top: 20px;
@@ -98,15 +131,17 @@ input[type=text] {
     width: 880px;
     border: solid 2px #cccccc;
     padding: 8px;
+    margin-bottom: 10px;
+    margin-top: 5px;
 }
 
 input[type=submit] {
-    background-color: #4aaaa5;
+    background-color: #1ab3ff;
     color: #ffffff;
     padding: 10px 30px 10px 30px;
     border: none;
     font-size: 12pt;
-    margin-top: 0;
+    margin-top: 10px;
     cursor: pointer;
 }
 
@@ -119,5 +154,5 @@ textarea {
     height: 200px;
     border: solid 2px #cccccc;
     padding: 8px;
-    margin-top: 0;
+    margin-top: 5px;
 }
