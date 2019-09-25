@@ -25,7 +25,8 @@ header {
 }
 
 .navBar {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     color: #cccccc;
     line-height: 90px;
 }
@@ -64,6 +65,11 @@ h2 {
     font-size: 24pt;
     padding: 20px 0 15px 0;
     color: #1ab3ff;
+}
+
+p {
+    line-height: 24px;
+    margin-bottom: 10px;
 }
 
 hr {
@@ -110,7 +116,6 @@ hr {
 .container {
     position: relative;
     width: 200px;
-    float: left;
     margin-bottom: 20px;
 }
 
