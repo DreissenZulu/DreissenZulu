@@ -25,8 +25,6 @@ header {
 }
 
 .navBar {
-    display: flex;
-    justify-content: flex-end;
     color: #cccccc;
     line-height: 90px;
 }
@@ -45,6 +43,9 @@ header {
 }
 
 .headerMid {
+    display: flex;
+    /* space-between adds a space between the contents ONLY */
+    justify-content: space-between;
     width: 960px;
     margin: auto;
 }
@@ -57,7 +58,7 @@ h1 {
     padding: 0 25px 0 25px;
     line-height: 90px;
     margin: 0;
-    float: left;
+ 
 }
 
 h2 {
